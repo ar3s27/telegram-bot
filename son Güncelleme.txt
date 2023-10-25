@@ -1,6 +1,11 @@
 son 10 deprem verisi bot.py dosyası çalıştığına kullanıcıya veriliyor 
 
+
 Yapılacaklar:
+
+vercele deploy etmede hata var "[ERROR] Runtime.ImportModuleError: Unable to import module 'vc__handler__python': No module named 'aiogram.contrib'
+Traceback (most recent call last):" hata bu bu hatayı çöz ve bot her an çalışır durumda kalsın ondan sonra diğer güncelemmeleri yap
+
 En son olan depremi kullanıcıya olduğu anda mesaj atmak ullanıcı ister ise ona son 10 deprem verisini
 vermek böylece her an son depremi öğrenebilir.
 
