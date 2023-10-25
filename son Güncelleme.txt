@@ -1,0 +1,9 @@
+son 10 deprem verisi bot.py dosyası çalıştığına kullanıcıya veriliyor 
+
+Yapılacaklar:
+En son olan depremi kullanıcıya olduğu anda mesaj atmak ullanıcı ister ise ona son 10 deprem verisini
+vermek böylece her an son depremi öğrenebilir.
+
+Üstteki adım tamamlandıktan sonra konuma dayalı kullancıya mesaj göndermeye başalar örnek olarak 
+("Siirtte bulunan bir adamın 100km yakınında olan depremler ikullancıya iletir eğer bu 100km alan 
+dışında olmuş ise iletmez")
