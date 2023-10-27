@@ -1,5 +1,4 @@
 aiogram
 requests
-aiogram.contrib.middlewares.logging
 aiogram.types
 aiogram.utils
