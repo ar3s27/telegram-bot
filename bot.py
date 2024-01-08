@@ -6,7 +6,7 @@ from aiogram.types import ParseMode
 from aiogram.utils import executor
 
 # Telegram bot token
-bot_token = '6977354306:AAG8iefJfhMyAAL_JymxuCY-tbiSW1FAnb8'
+bot_token = 'token will go here'
 
 # Sitenin API'si veya veri kaynağı URL'si
 earthquake_data_url = 'https://deprem-gorsellestirme.vercel.app'
