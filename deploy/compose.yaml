@@ -1,0 +1,23 @@
+# Telegram deprem botu. Sunucuda ~/apps/telegram-bot/compose.yaml olarak durur; deploy/deploy.sh günceller.
+# Bot token'ı ~/apps/telegram-bot/.env içindeki TELEGRAM_BOT_TOKEN'dır (repoya girmez).
+# Deprem verisini ortak "web" ağındaki deprem-api konteynerinden alır; dışarıdan erişilen bir adresi yoktur.
+services:
+  bot:
+    build: ./app
+    image: telegram-deprem-bot:latest
+    container_name: telegram-deprem-bot
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DEPREM_API_URL: http://deprem-api:8000
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
